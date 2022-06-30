@@ -1,0 +1,102 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+//############ variables #################//
+
+$DesaturatedRed: hsl(0, 36%, 70%);
+$SoftRed: hsl(0, 93%, 68%);
+$DarkGrayishRed: hsl(0, 6%, 24%);
+
+// * {
+//   border: 0.3px solid yellow;
+// }
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  margin:0;
+  background-image: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+  color:$DarkGrayishRed;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.logo{
+  height: calc(85rem/16);
+  display: flex;
+  place-items: center;
+  padding-inline-start: calc(31/375*100vw);
+  box-sizing: border-box;
+
+}
+
+.heroImg{
+  width:100%;
+  aspect-ratio: 375 / 252;
+
+
+
+  img{
+    width: 100%;
+    // height: auto;
+  }
+}
+
+.messages{
+   text-align: center;
+  
+
+  .firstrow, .secondrow{
+    font-size: calc(39/16*1rem);
+    text-transform: uppercase;
+   
+    letter-spacing:0.3em;
+    
+
+  }
+
+  .firstrow{
+    font-weight:300;
+    color:$DesaturatedRed;
+  }
+  .secondrow{
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .shortMsg{
+    font-size: calc(13/16*1rem);
+    letter-spacing: 0.04em;
+    line-height: 1.9;
+    width:calc(300/375*100%);
+    margin:auto;
+  }
+
+  .inputEmail{
+    height: 48px;
+    border-radius: 30px;
+    width: calc(313/375*100vw);
+    border:1px solid $DesaturatedRed;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input{
+      border:none;
+      margin-left: 25px;
+      font-family: inherit;
+    }
+
+    button{
+      height: inherit;
+      border-radius: inherit;
+      width: 65px;
+      border:inherit;
+      background-color: $SoftRed;
+    }
+  }
+}

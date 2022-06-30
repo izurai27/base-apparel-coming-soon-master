@@ -1,0 +1,102 @@
+@import url(d:\izma\belajar\1. web developer\kumpulan project\frontend mentor\newbie\2. base-apparel-coming-soon-master\2. base-apparel-coming-soon-master\base-apparel-coming-soon-master\styles\reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  background-image: linear-gradient(135deg, from white, to #fff5f5);
+  color: #413a3a;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.logo {
+  height: calc(85rem/16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-padding-start: calc(31/375*100vw);
+          padding-inline-start: calc(31/375*100vw);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.heroImg {
+  width: 100%;
+  aspect-ratio: 375 / 252;
+}
+
+.heroImg img {
+  width: 100%;
+}
+
+.messages {
+  text-align: center;
+}
+
+.messages .firstrow, .messages .secondrow {
+  font-size: calc(39/16*1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.messages .firstrow {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.messages .secondrow {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.messages .shortMsg {
+  font-size: calc(13/16*1rem);
+  letter-spacing: 0.04em;
+  line-height: 1.9;
+  width: calc(300/375*100%);
+  margin: auto;
+}
+
+.messages .inputEmail {
+  height: 48px;
+  border-radius: 30px;
+  width: calc(313/375*100vw);
+  border: 1px solid #ce9797;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.messages .inputEmail input {
+  border: none;
+  margin-left: 25px;
+  font-family: inherit;
+}
+
+.messages .inputEmail button {
+  height: inherit;
+  border-radius: inherit;
+  width: 65px;
+  border: inherit;
+  background-color: #f96262;
+}
+/*# sourceMappingURL=style.css.map */
