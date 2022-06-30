@@ -3,7 +3,7 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
-  background-image: linear-gradient(135deg, from white, to #fff5f5);
+  background-image: linear-gradient(135deg, white, #fff5f5);
   color: #413a3a;
 }
 
@@ -43,6 +43,15 @@ body {
 
 .messages {
   text-align: center;
+  padding: calc(66/16*1rem) 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
 }
 
 .messages .firstrow, .messages .secondrow {
@@ -84,19 +93,40 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .messages .inputEmail input {
   border: none;
   margin-left: 25px;
   font-family: inherit;
+  letter-spacing: 0.04em;
+  font-size: calc(14/16*1rem);
+  background-color: transparent;
+  position: relative;
+  display: block;
+  width: 57%;
 }
 
 .messages .inputEmail button {
-  height: inherit;
+  height: 100%;
   border-radius: inherit;
   width: 65px;
   border: inherit;
   background-color: #f96262;
+}
+
+.messages .warningMsg {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  font-size: calc(14/16*1rem);
+  margin-left: 27px;
+  color: #f96262;
+  visibility: hidden;
+}
+
+.messages .warning {
+  visibility: hidden;
 }
 /*# sourceMappingURL=style.css.map */
