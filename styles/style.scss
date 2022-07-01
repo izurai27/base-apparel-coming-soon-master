@@ -112,8 +112,9 @@ body{
       height: 100%;
       border-radius: inherit;
       width: 65px;
-      border:inherit;
-      background-color: $SoftRed;
+      border: none;
+      // background-color: $SoftRed;
+      background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));;
     }
 
     
@@ -136,8 +137,13 @@ body{
 
 @media only screen and (min-width: 768px) {
 
+  :root{
+    height: 100vh;
+  }
+
   body{
     background-image: url(/images/bg-pattern-desktop.svg);
+    background-size: cover;
   }
 
 
@@ -190,13 +196,15 @@ body{
   .heroImg{
     grid-area: right;
     width:calc(610/1440*100vw);
-    height: 100vh;
-    overflow: hidden;
+   
+    
 
     .desktopHero{
       display: block;
-      height: 100vh;
-     
+            
+      img{
+        height: 100%;
+      }
     }
 
     .mobileHero{
