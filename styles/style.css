@@ -189,7 +189,7 @@ body {
   }
   .heroImg .desktopHero {
     display: block;
-    height: 100%;
+    height: 100vh;
   }
   .heroImg .mobileHero {
     display: none;
