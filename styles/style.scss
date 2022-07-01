@@ -10,6 +10,8 @@ $DarkGrayishRed: hsl(0, 6%, 24%);
 // * {
 //   border: 0.3px solid yellow;
 // }
+
+
 body{
   font-family: 'Josefin Sans', sans-serif;
   margin:0;
@@ -22,7 +24,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  // height: 100%;
 }
 
 .logo{
@@ -35,7 +37,7 @@ body{
 }
 
 .heroImg{
-  width:100%;
+  // width:100%;
   aspect-ratio: 375 / 252;
 
 
@@ -43,6 +45,9 @@ body{
   img{
     width: 100%;
     // height: auto;
+  }
+  .desktopHero{
+    display:none;
   }
 }
 
@@ -52,6 +57,7 @@ body{
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+
 
   .firstrow, .secondrow{
     font-size: calc(39/16*1rem);
@@ -110,15 +116,7 @@ body{
       background-color: $SoftRed;
     }
 
-    // &:invalid::after{
-    //   content:'Please provide a valid email';
-    //   display:block;
-    //   position:absolute;
-    //   bottom: -30px;
-    //   font-size:  calc(14/16*1rem);
-    //   margin-left:27px;
-    //   color:$SoftRed;
-    // }
+    
   }
 
   .warningMsg{
@@ -134,4 +132,74 @@ body{
   .warning{
     visibility:hidden;
   }
+}
+
+@media only screen and (min-width: 768px) {
+
+ 
+
+
+  .container{
+    display: grid;
+    grid-template-areas: 'left1 right'
+                         'left2 right';
+    column-gap: 0;
+    justify-content: space-between;
+    padding-inline-start: calc(168/1440*100vw);
+  }
+
+  .logo{
+    grid-area: left1;
+    height:calc(168/16*1rem);
+    padding:0;
+  }
+
+  .messages{
+    grid-area: left2;
+    // width:calc(830/1440*100vw);
+    text-align: left;
+    height: fit-content;
+    padding:0;
+    box-sizing: border-box;
+    
+    .firstrow, .secondrow{
+      font-size: calc(61/16*1rem);
+      text-transform: uppercase;
+      width:calc(363/1440*100vw);
+      letter-spacing:0.3em;
+      
+  
+    }
+
+    .shortMsg{
+      font-size: calc(17/16*1rem);
+      width:calc(500/1440*100vw);
+      margin:0;
+    }
+
+    .inputEmail{
+      
+      width: calc(445/1440*100vw);
+      margin:0;
+    }
+  }
+
+  .heroImg{
+    grid-area: right;
+    width:calc(610/1440*100vw);
+    height: 100vh;
+    overflow: hidden;
+
+    .desktopHero{
+      display: block;
+      height: 100%;
+      min-width: 100%;
+    }
+
+    .mobileHero{
+      display: none;
+    }
+  }
+
+
 }

@@ -5,7 +5,7 @@
   let warningMsg = document.querySelector(".warningMsg");
   let warning = document.querySelector(".warning");
  
-  inputEmail.addEventListener("change", function() {
+  inputEmail.addEventListener("input", function() {
     console.log(inputEmail.value)
     console.log(/@/gi.test(inputEmail.value))
     if (/\@/gi.test(inputEmail.value) === false) {
