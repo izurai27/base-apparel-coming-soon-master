@@ -39,16 +39,9 @@ body{
 .heroImg{
   // width:100%;
   aspect-ratio: 375 / 252;
+  object-fit: cover;
 
 
-
-  img{
-    width: 100%;
-    // height: auto;
-  }
-  .desktopHero{
-    display:none;
-  }
 }
 
 .messages{
@@ -224,17 +217,17 @@ body{
    
     
 
-    .desktopHero{
-      display: block;
+    // .desktopHero{
+    //   display: block;
             
-      img{
-        height: 100%;
-      }
-    }
+    //   img{
+    //     height: 100%;
+    //   }
+    // }
 
-    .mobileHero{
-      display: none;
-    }
+    // .mobileHero{
+    //   display: none;
+    // }
   }
 
 

@@ -32,14 +32,8 @@ body {
 
 .heroImg {
   aspect-ratio: 375 / 252;
-}
-
-.heroImg img {
-  width: 100%;
-}
-
-.heroImg .desktopHero {
-  display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .messages {
@@ -206,15 +200,6 @@ body {
     -ms-grid-column: 2;
     grid-area: right;
     width: calc(610/1440*100vw);
-  }
-  .heroImg .desktopHero {
-    display: block;
-  }
-  .heroImg .desktopHero img {
-    height: 100%;
-  }
-  .heroImg .mobileHero {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,14 +16,19 @@
 </head>
 <body>
   <div class="container">
-    <div class="logo">
+    <header class="logo">
       <img src="./images/logo.svg" alt="logo">
+    </header>
+    <div class="heroImg">
+      <picture >
+        <source srcset="./images/hero-desktop.jpg" media="(min-width: 768px)">
+        <img src="./images/hero-mobile.jpg" alt="MDN">
+      </picture>
     </div>
-    <figure class="heroImg">
-      <img src="./images/hero-mobile.jpg" alt="" class="mobileHero">
-      <img src="./images/hero-desktop.jpg" alt="" class="desktopHero">
-    </figure>
-    <div class="messages">
+    
+      
+    
+    <main class="messages">
       <h1>
         <div class="firstrow">We're</div>
         <div class="secondrow">coming soon</div>
@@ -32,13 +37,13 @@
         Hello fellow shoppers! We're currently building our new fashion store. 
     Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
-      <div class="inputEmail">
+      <form class="inputEmail">
         <input type="email" placeholder="Email Address" id="inputEmail">
         <img src="/images/icon-error.svg" alt="" class="warning">
         <button><img src="./images/icon-arrow.svg" alt=""></button>
         <div class="warningMsg">Please provide a valid email</div>
-      </div>
-    </div>
+      </form>
+    </main>
   </div>
   
    <script src="app.js"></script>
