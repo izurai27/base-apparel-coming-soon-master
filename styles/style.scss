@@ -83,6 +83,7 @@ body{
     line-height: 1.9;
     width:calc(300/375*100%);
     margin:auto;
+    color:$DesaturatedRed;
   }
 
   .inputEmail{
@@ -208,11 +209,13 @@ body{
       
       width: calc(445/1440*100vw);
       margin:0;
+
+      button{
+        width:calc(100/1440*100vw);
+      }
+
     }
 
-    button{
-      width:calc(100/1440*100vw);
-    }
   }
 
   .heroImg{
